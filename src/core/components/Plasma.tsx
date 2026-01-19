@@ -10,7 +10,7 @@ interface PlasmaProps {
 
 export default function Plasma({ speed = 0.5, opacity = 1 }: PlasmaProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -86,7 +86,7 @@ export default function Plasma({ speed = 0.5, opacity = 1 }: PlasmaProps) {
 
     return () => {
       window.removeEventListener('resize', setCanvasSize);
-      if (animationRef.current) {
+      if (animationRef.current !== null) {
         cancelAnimationFrame(animationRef.current);
       }
     };
