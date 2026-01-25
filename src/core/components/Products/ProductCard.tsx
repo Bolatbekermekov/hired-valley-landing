@@ -52,7 +52,7 @@ export default function ProductCard({
 			)}
 
 			{/* Glass Card */}
-			<div className='relative h-full p-8 rounded-3xl bg-gradient-to-b from-white/[0.07] to-white/[0.02] backdrop-blur-xl border border-white/10 group-hover:border-white/20 transition-all duration-500 overflow-hidden'>
+			<div className='relative h-full p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-white/[0.07] to-white/[0.02] backdrop-blur-xl border border-white/10 group-hover:border-white/20 transition-all duration-500 overflow-hidden'>
 				{/* Subtle glow on hover */}
 				<div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
 					<div
@@ -67,13 +67,15 @@ export default function ProductCard({
 				{/* Content */}
 				<div className='relative z-10'>
 					{/* Title */}
-					<h3 className='text-2xl font-bold text-white mb-3 group-hover:text-purple-200 transition-colors duration-300'>
+					<h3 className='text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-purple-200 transition-colors duration-300'>
 						{title}
 					</h3>
 
 					{/* Price */}
 					<div className='flex items-baseline gap-2 mb-4'>
-						<span className='text-5xl font-bold text-white'>${price}</span>
+						<span className='text-4xl sm:text-5xl font-bold text-white'>
+							${price}
+						</span>
 						{originalPrice && (
 							<span className='text-lg text-gray-500 line-through'>
 								${originalPrice}
@@ -82,10 +84,12 @@ export default function ProductCard({
 					</div>
 
 					{/* Description */}
-					<p className='text-gray-400 mb-8 leading-relaxed'>{description}</p>
+					<p className='text-gray-400 mb-6 sm:mb-8 leading-relaxed'>
+						{description}
+					</p>
 
 					{/* Features */}
-					<ul className='space-y-3 mb-8'>
+					<ul className='space-y-3 mb-6 sm:mb-8'>
 						{features.map((feature, index) => (
 							<motion.li
 								key={index}
@@ -120,7 +124,7 @@ export default function ProductCard({
 						<motion.button
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
-							className='w-full group/btn relative px-6 py-4 text-white font-semibold rounded-xl transition-all duration-300 overflow-hidden'
+							className='w-full group/btn relative px-6 py-3.5 sm:py-4 text-white font-semibold rounded-xl transition-all duration-300 overflow-hidden'
 							style={{
 								background:
 									'radial-gradient(circle, rgba(42, 5, 82, 1) 0%, rgba(25, 3, 50, 1) 100%)',

@@ -10,7 +10,7 @@ const faqs = [
 		question:
 			'Как начать карьеру за рубежом без опыта работы в международных компаниях?',
 		answer:
-			'Мы рекомендуем начать с нашего Job Offer Guide, который содержит пошаговую методологию выхода на международный рынок. Далее можно пройти LinkedIn & X Workshop для настройки профиля и привлечения внимания рекрутеров. Многие наши участники получают первые офферы уже через 3-6 месяцев работы по программе.',
+			'Мы рекомендуем начать с нашего гайда по офферу, который содержит пошаговую методологию выхода на международный рынок. Далее можно пройти воркшоп по LinkedIn и X для настройки профиля и привлечения внимания рекрутеров. Многие наши участники получают первые офферы уже через 3-6 месяцев работы по программе.',
 	},
 	{
 		question: 'Какие компании нанимают через вашу платформу?',
@@ -43,7 +43,7 @@ export default function FAQ() {
 	const [openIndex, setOpenIndex] = useState<number | null>(0)
 
 	return (
-		<section className='relative py-32 overflow-hidden bg-black'>
+		<section className='relative py-20 sm:py-24 overflow-hidden bg-black'>
 			{/* Background */}
 			<div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_80%)]' />
 
@@ -53,22 +53,24 @@ export default function FAQ() {
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					className='text-center mb-16'
+					className='text-center mb-10 sm:mb-14 lg:mb-16'
 				>
 					<motion.div
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						viewport={{ once: true }}
-						className='inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8'
+						className='inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 sm:mb-8'
 					>
-						<span className='text-gray-300 text-sm font-medium'>FAQs</span>
+						<span className='text-gray-300 text-sm font-medium'>
+							Частые вопросы
+						</span>
 					</motion.div>
 
-					<h2 className='text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight'>
+					<h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 tracking-tight'>
 						Ответы на ваши <span className='block'>главные вопросы</span>
 					</h2>
 
-					<p className='text-xl text-gray-400 max-w-2xl mx-auto'>
+					<p className='text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto'>
 						Всё, что нужно знать о международной карьере и наших программах
 					</p>
 				</motion.div>
@@ -85,14 +87,14 @@ export default function FAQ() {
 						>
 							<button
 								onClick={() => setOpenIndex(openIndex === index ? null : index)}
-								className='w-full text-left p-6 rounded-2xl border border-white/10 transition-all duration-300 relative overflow-hidden'
+								className='w-full text-left p-5 sm:p-6 rounded-2xl border border-white/10 transition-all duration-300 relative overflow-hidden'
 								style={{
 									background:
 										'radial-gradient(circle, rgba(42, 5, 82, 1) 0%, rgba(1, 1, 5, 1) 100%)',
 								}}
 							>
 								<div className='relative flex items-center justify-between gap-4'>
-									<h3 className='text-lg font-semibold text-white pr-4'>
+									<h3 className='text-base sm:text-lg font-semibold text-white pr-4'>
 										{faq.question}
 									</h3>
 									<motion.div

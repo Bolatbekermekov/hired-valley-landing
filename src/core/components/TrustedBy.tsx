@@ -20,7 +20,7 @@ const companies = [
 
 export default function TrustedBy() {
 	return (
-		<div className='relative w-full py-12 overflow-hidden bg-black/30 backdrop-blur-sm border-y border-white/10'>
+		<div className='relative w-full py-10 sm:py-12 overflow-hidden bg-black/30 backdrop-blur-sm border-y border-white/10'>
 			<div className='max-w-7xl mx-auto px-6'>
 				<motion.h3
 					initial={{ opacity: 0, y: 20 }}
@@ -29,12 +29,12 @@ export default function TrustedBy() {
 					transition={{ duration: 0.6 }}
 					className='text-center text-white/70 text-sm font-medium mb-8 tracking-wide uppercase'
 				>
-					Over 50+ companies trust us
+					Нам доверяют 50+ компаний
 				</motion.h3>
 
 				<div className='relative'>
-					<div className='absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none' />
-					<div className='absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none' />
+					<div className='absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none' />
+					<div className='absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none' />
 
 					<Marquee speed={50} gradient={false} pauseOnHover>
 						{companies.map((company, index) => (

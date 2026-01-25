@@ -9,8 +9,8 @@ const footerLinks = {
 	products: {
 		title: 'Продукты',
 		links: [
-			{ name: 'Job Offer Guide', href: '/products' },
-			{ name: 'LinkedIn & X Workshop', href: '/products' },
+			{ name: 'Гайд по офферу', href: '/products' },
+			{ name: 'Воркшоп по LinkedIn и X', href: '/products' },
 			{ name: 'Консультация 1:1', href: '/products' },
 			{ name: 'Карьерный интенсив', href: '/products' },
 		],
@@ -21,7 +21,7 @@ const footerLinks = {
 			{ name: 'О нас', href: '/about' },
 			{ name: 'Блог', href: '/blog' },
 			{ name: 'Контакты', href: '/contact' },
-			{ name: 'FAQ', href: '#faq' },
+			{ name: 'Вопросы', href: '#faq' },
 		],
 	},
 	resources: {
@@ -60,8 +60,8 @@ export default function Footer() {
 			{/* Background pattern */}
 			<div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50' />
 
-			<div className='relative z-10 max-w-7xl mx-auto px-6 py-16'>
-				<div className='grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8'>
+			<div className='relative z-10 max-w-7xl mx-auto px-6 py-12 sm:py-16'>
+				<div className='grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8'>
 					{/* Left Section - Brand & Telegram CTA */}
 					<div className='lg:col-span-5'>
 						{/* Logo */}
@@ -76,14 +76,14 @@ export default function Footer() {
 								>
 									HV
 								</div>
-								<span className='text-2xl font-bold text-white'>
+								<span className='text-xl sm:text-2xl font-bold text-white'>
 									Hired Valley
 								</span>
 							</div>
 						</Link>
 
 						{/* Description */}
-						<p className='text-gray-300 mb-8 leading-relaxed max-w-md text-lg'>
+						<p className='text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-md text-base sm:text-lg'>
 							Присоединяйтесь к крупнейшему комьюнити профессионалов в СНГ
 						</p>
 
@@ -222,7 +222,7 @@ export default function Footer() {
 				</div>
 
 				{/* Bottom Bar */}
-				<div className='mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4'>
+				<div className='mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4'>
 					<p className='text-gray-500 text-sm'>
 						© {new Date().getFullYear()} Hired Valley. Все права защищены.
 					</p>

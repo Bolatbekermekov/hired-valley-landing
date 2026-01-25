@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 
 export default function CTASection() {
 	return (
-		<section className='relative py-32 overflow-hidden bg-black'>
+		<section className='relative py-20 sm:py-24 overflow-hidden bg-black'>
 			<div className='relative z-10 max-w-7xl mx-auto px-6'>
 				<motion.div
 					initial={{ opacity: 0, scale: 0.95 }}
@@ -31,13 +31,13 @@ export default function CTASection() {
 					<div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px]' />
 
 					{/* Content */}
-					<div className='relative z-10 px-8 py-20 md:px-16 md:py-24 text-center'>
+					<div className='relative z-10 px-6 py-14 sm:px-8 sm:py-20 md:px-16 md:py-24 text-center'>
 						<motion.h2
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ delay: 0.2 }}
-							className='text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight'
+							className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 tracking-tight'
 						>
 							Начните свою международную карьеру{' '}
 							<span className='block mt-2'>уже сегодня</span>
@@ -48,7 +48,7 @@ export default function CTASection() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ delay: 0.3 }}
-							className='text-xl text-gray-300 mb-10 max-w-2xl mx-auto'
+							className='text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto'
 						>
 							Присоединяйтесь к 87,000+ профессионалам, которые уже строят
 							карьеру в топовых компаниях мира
@@ -64,7 +64,7 @@ export default function CTASection() {
 								<motion.button
 									whileHover={{ scale: 1.05 }}
 									whileTap={{ scale: 0.95 }}
-									className='group relative px-8 py-4 text-white font-semibold rounded-xl transition-all duration-300 overflow-hidden inline-flex items-center gap-2'
+									className='group relative px-6 py-3 sm:px-8 sm:py-4 text-white font-semibold rounded-xl transition-all duration-300 overflow-hidden inline-flex items-center gap-2'
 									style={{
 										background:
 											'radial-gradient(circle, rgba(42, 5, 82, 1) 0%, rgba(25, 3, 50, 1) 100%)',

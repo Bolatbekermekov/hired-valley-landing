@@ -7,7 +7,7 @@ import ProductCard from './ProductCard'
 
 const products = [
 	{
-		title: 'Job Offer Guide',
+		title: 'Гайд по офферу',
 		price: '49',
 		description:
 			'Авторская методология «Как получить оффер в 2026 году» для выхода на международный рынок и получения оффера в $ / € / AED',
@@ -23,7 +23,7 @@ const products = [
 		popular: false,
 	},
 	{
-		title: 'LinkedIn & X Workshop',
+		title: 'Воркшоп по LinkedIn и X',
 		price: '19',
 		description:
 			'Как с помощью LinkedIn и X получать офферы из стартапов Кремниевой Долины, Нью-Йорка, Бостона, Лондона и Сингапура',
@@ -77,7 +77,7 @@ const products = [
 
 export default function Services() {
 	return (
-		<section className='relative py-32 overflow-hidden bg-black'>
+		<section className='relative py-20 sm:py-24 overflow-hidden bg-black'>
 			{/* Minimal subtle background - ваш цвет */}
 			<div
 				className='absolute inset-0'
@@ -97,13 +97,13 @@ export default function Services() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6 }}
-					className='text-center mb-20'
+					className='text-center mb-12 sm:mb-16 lg:mb-20'
 				>
 					<motion.div
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						viewport={{ once: true }}
-						className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8'
+						className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 sm:mb-8'
 					>
 						<div
 							className='w-1.5 h-1.5 rounded-full animate-pulse'
@@ -114,14 +114,14 @@ export default function Services() {
 						</span>
 					</motion.div>
 
-					<h2 className='text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight'>
+					<h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight'>
 						Начните свою{' '}
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-white'>
 							международную карьеру
 						</span>
 					</h2>
 
-					<p className='text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed'>
+					<p className='text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed'>
 						Выберите подходящий формат обучения и поддержки для достижения ваших
 						карьерных целей
 					</p>
@@ -140,14 +140,14 @@ export default function Services() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6, delay: 0.3 }}
-					className='mt-20 text-center'
+					className='mt-12 sm:mt-16 lg:mt-20 text-center'
 				>
-					<p className='text-gray-500 mb-6 text-lg'>
+					<p className='text-gray-500 mb-4 sm:mb-6 text-base sm:text-lg'>
 						Не уверены, какой продукт выбрать?
 					</p>
 					<a
 						href='https://t.me/hiredvalleymanager'
-						className='inline-flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-medium rounded-full backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 group'
+						className='inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-white/5 hover:bg-white/10 text-white font-medium rounded-full backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 group'
 					>
 						Получить консультацию
 						<ArrowRight className='w-4 h-4 group-hover:translate-x-1 transition-transform' />
